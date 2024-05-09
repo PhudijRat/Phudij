@@ -1,55 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตั้ว วิศวะ</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบ Quiz ลองเล่นๆ</title>
+   <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-    <img src="Profile.jpg" alt="" style="width: 20%; height: auto;">
-    <h1>Phudij Rattanawaraha</h1>
-    <a href = "http://www.cpall.co.th/"> ไปยังเว็บไซต์ของหน่วยงาน </a>
-    <br />
-    <a href = "contact.html"> Contact จ้า</a>
+   <div class="quiz-container">
+       <h1></h1>
+       <p id="question">PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer('a')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer('b')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer('c')">C) พิม</button>
+       <button class="button" onclick="checkAnswer('d')">D) ภีม</button>
+       <p id="result"></p>
+    <hr>
+      <h1></h1>
+      <p id="question2">EDP. อยู่ภายใต้สำนักใด ?</p>
+      <button class="button" onclick="checkAnswer2('e')">A) CPM-X</button>
+      <button class="button" onclick="checkAnswer2('f')">B) Food Strore Concept</button>
+      <button class="button" onclick="checkAnswer2('g')">C) Equipment of Purchasing</button>
+      <button class="button" onclick="checkAnswer2('h')">D) QA.</button>
+      <p id="result2"></p>
+    <hr class="line">
+    
+   <p id="result3"><p>
+   </div>
 
-    <h3>ประสบการณ์ทำงาน</h3>
-    <!--coment<ul>
-        <li>2024 - Present CPALL Company</li>
-        <li>2021 - 2022 CP Company</li>
-        <li>2019 - 2021 BTS Company</li>
-        <li>2017 - 2019 CPN Company</li>
-    </ul>-->
-
-    <!--ทำให้เป็น Table-->
-      
-    <table>
-        <thead>
-            <tr>
-                <th>
-                Year
-                </th>
-                 <th>
-                Work Place
-                </th>
-            </tr>
-        </thead> 
-        <tr>
-            <td>2024 - Present</td>
-            <td>CPALL Company</td>
-        </tr>
-        <tr>
-            <td>2021 - 2022</td>
-            <td>CP Company</td>
-        </tr>
-        <tr></tr>
-            <td>2019 - 2021</td>
-            <td>BTS Company</td>
-        <tr>
-            <td>2017 - 2019</td>
-            <td>CPN Company</td>
-        </tr>
-    </table>
-
+<script src="index.js" charset="UTF-8"></script>
 </body>
 </html>
